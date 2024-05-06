@@ -164,7 +164,7 @@ The file conforms to ros_industrial recommndations (TODO)
   <link name="link6">
     <visual>
       <geometry>
-        <mesh filename="package://vispa_description/meshes/LINK_5.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://vispa_description/meshes/LINK_5.stl" scale="0.0001 0.0001 0.0001"/>
       </geometry>
     </visual>
     <collision>

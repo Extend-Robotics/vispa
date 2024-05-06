@@ -142,13 +142,15 @@ The file conforms to ros_industrial recommndations (TODO)
   <link name="link6">
     <visual>
       <geometry>
-        <mesh filename="package://vispa_description/meshes/LINK_5.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://vispa_description/meshes/LINK_5.stl" scale="0.0001 0.0001 0.0001"/>
       </geometry>
+      <origin xyz="0 -0.005 0" rpy="0.0174533 0 0"/>
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://vispa_description/meshes/LINK_5_col.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://vispa_description/meshes/LINK_5_col.stl" scale="0.0001 0.0001 0.0001"/>
       </geometry>
+      <origin xyz="0 -0.005 0" rpy="0.0174533 0 0"/>
     </collision>
     <inertial>
       <mass value="1.7"/>
@@ -184,7 +186,7 @@ The file conforms to ros_industrial recommndations (TODO)
   <!-- LOCARM joints -->
   <joint name="j01" type="revolute">
     <axis xyz="0 0 1"/>
-    <limit effort="50" lower="-3.14149265359" upper="3.14149265359" velocity="0.09395689"/>
+    <limit effort="50" lower="-3.14149265359" upper="-0.174533" velocity="0.09395689"/>
     <parent link="link0"/>
     <child link="link1"/>
     <!-- Location of the link1 FOR in link0 FOR + compensation for as-built 0 position of the joint -->
@@ -204,8 +206,8 @@ The file conforms to ros_industrial recommndations (TODO)
     <dynamics damping="100"/>
   </joint>
   <joint name="j23" type="revolute">
-    <axis xyz="0 1 0"/>
-    <limit effort="50" lower="-3.14149265359" upper="3.14149265359" velocity="0.09395689"/>
+    <axis xyz="0 -1 0"/>
+    <limit effort="50" lower="-1.5707963268" upper="1.5707963268" velocity="0.09395689"/>
     <parent link="link2"/>
     <child link="link3"/>
     <!-- Location of the link3 FOR in link2 FOR  + compensation for as-built 0 position of the joint -->
@@ -215,7 +217,7 @@ The file conforms to ros_industrial recommndations (TODO)
   </joint>
   <joint name="j34" type="revolute">
     <axis xyz="-1 0 0"/>
-    <limit effort="50" lower="-3.14149265359" upper="3.14149265359" velocity="0.09395689"/>
+    <limit effort="50" lower="0.174533" upper="3.14149265359" velocity="0.09395689"/>
     <parent link="link3"/>
     <child link="link4"/>
     <!-- Location of the link4 FOR in link3 FOR  + compensation for as-built 0 position of the joint -->
