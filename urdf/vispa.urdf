@@ -186,7 +186,7 @@ The file conforms to ros_industrial recommndations (TODO)
   <!-- LOCARM joints -->
   <joint name="j01" type="revolute">
     <axis xyz="0 0 1"/>
-    <limit effort="50" lower="-3.14149265359" upper="-0.174533" velocity="0.09395689"/>
+    <limit effort="50" lower="-2.96706" upper="0" velocity="0.09395689"/>
     <parent link="link0"/>
     <child link="link1"/>
     <!-- Location of the link1 FOR in link0 FOR + compensation for as-built 0 position of the joint -->
@@ -217,7 +217,7 @@ The file conforms to ros_industrial recommndations (TODO)
   </joint>
   <joint name="j34" type="revolute">
     <axis xyz="-1 0 0"/>
-    <limit effort="50" lower="0.174533" upper="3.14149265359" velocity="0.09395689"/>
+    <limit effort="50" lower="-2.96706" upper="-0.174533" velocity="0.09395689"/>
     <parent link="link3"/>
     <child link="link4"/>
     <!-- Location of the link4 FOR in link3 FOR  + compensation for as-built 0 position of the joint -->
