@@ -227,7 +227,7 @@ The file conforms to ros_industrial recommndations (TODO)
   </joint>
   <joint name="j45" type="revolute">
     <axis xyz="0 1 0"/>
-    <limit effort="50" lower="-3.14149265359" upper="3.14149265359" velocity="0.09395689"/>
+    <limit effort="50" lower="0.523599" upper="3.14149265359" velocity="0.09395689"/>
     <parent link="link4"/>
     <child link="link5"/>
     <!-- Location of the link5 FOR in link4 FOR + compensation for as-built 0 position of the joint -->
